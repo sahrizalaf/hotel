@@ -16,7 +16,7 @@ if ( mysqli_num_rows($query) == 1 ) {
     if ( password_verify($password, $user['password']) ) {
         
         $_SESSION['username'] = $user['username'];
-        $_SESSION['typeuser'] = $user['typeuser'];
+        $_SESSION['level']    = $user['level'];
 
         header('Location: dashboard.php');
     } else {
