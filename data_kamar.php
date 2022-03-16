@@ -38,39 +38,43 @@ session_start();
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <div class="sidebar-heading">
-                MENU ADMIN
-            </div>
+            <?php if($_SESSION['level'] == 'admin'): ?>
+                <div class="sidebar-heading">
+                    MENU ADMIN
+                </div>
 
-            <li class="nav-item">
-                <a class="nav-link" href="data_kamar.php">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Data Kamar</span></a>
-                </a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data_kamar.php">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Data Kamar</span></a>
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="data_fasilitas_hotel.php">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Data Fasilitas Hotel</span></a>
-                </a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data_fasilitas_hotel.php">
+                        <i class="fas fa-fw fa-tachometer-alt"></i>
+                        <span>Data Fasilitas Hotel</span></a>
+                    </a>
+                </li>
 
-            <!-- Divider -->
-            <hr class="sidebar-divider">
+                <!-- Divider -->
+                <hr class="sidebar-divider">
+            <?php endif; ?>
 
-            <div class="sidebar-heading">
-                MENU RESEPSIONIS
-            </div>
+            <?php if($_SESSION['level'] == 'resepsionis'): ?>
+                <div class="sidebar-heading">
+                    MENU RESEPSIONIS
+                </div>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="data_reservasi.php">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Data Reservasi</span>
-                </a>
-            </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="data_reservasi.php">
+                        <i class="fas fa-fw fa-folder"></i>
+                        <span>Data Reservasi</span>
+                    </a>
+                </li>
 
-            <hr class="sidebar-divider d-none d-md-block">
+                <hr class="sidebar-divider d-none d-md-block">
+            <?php endif; ?>
 
             <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
@@ -107,7 +111,7 @@ session_start();
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="logout.php">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
