@@ -41,7 +41,7 @@
             <div class="card-body">
               <h3 class="card-title"><?php echo $fasilitas['tipe_kamar'] ?></h3>
               <p class="card-text"><?php echo $fasilitas['fasilitas_kamar']; ?></p>
-              <a href="" class="btn btn-success">Reservasi</a>
+              <a href="reservasi.php" class="btn btn-success">Reservasi</a>
             </div>
           </div>
         </div>
