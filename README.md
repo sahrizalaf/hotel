@@ -27,5 +27,5 @@ Terdapat 3 user:
   * CRUD Fasilitas Hotel
 
 * Resepsionis, dapat melakukan:
-  * Cek Data Reservasi
+  * Cek Data Reservasi (Melihat, Mengubah, Menghapus)
   * Cari Data Reservasi berdasarkan Tanggal Cek In atau Nama Tamu

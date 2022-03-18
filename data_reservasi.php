@@ -174,6 +174,7 @@ session_start();
                                     <th>ID Reservasi</th>
                                     <th>Nama Tamu</th>
                                     <th>No Handphone</th>
+                                    <th>Tipe Kamar</th>
                                     <th>Tanggal Cek In</th>
                                     <th>Tanggal Cek Out</th>
                                     <th style="min-width: 175px;">Aksi</th>
@@ -182,13 +183,14 @@ session_start();
                             <tbody>
                                 <?php
                                 include "koneksi.php";
-                                $query = mysqli_query($koneksi, "SELECT * FROM reservasi $where");
+                                $query = mysqli_query($koneksi, "SELECT * FROM reservasi INNER JOIN kamar ON reservasi.id_kamar = kamar.id_kamar $where");
                                 while( $hasil = mysqli_fetch_array($query, MYSQLI_ASSOC) ):
                                 ?>
                                 <tr>
                                     <td><?php echo $hasil['id_reservasi']; ?></td>
                                     <td><?php echo $hasil['nama_tamu']; ?></td>
                                     <td><?php echo $hasil['no_handphone']; ?></td>
+                                    <td><?php echo $hasil['tipe_kamar']; ?></td>
                                     <td><?php echo $hasil['tanggal_cek_in']; ?></td>
                                     <td><?php echo $hasil['tanggal_cek_out']; ?></td>
                                     <td>
