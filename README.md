@@ -1,6 +1,14 @@
 # Aplikasi Pemesanan Hotel - Ujikom SMK RPL 2021/2022 Paket 2
 
-Demo: **COMING SOON**
+Demo: <http://hotel-tarpan.infinityfreeapp.com>
+
+**Login Administrator:**
+* Username: admin
+* Password: admin
+
+**Login Resepsionis:**
+* Username: resepsionis
+* Password: resepsionis
 
 ## Gambaran Umum Sistem
 Aplikasi Pemesanan Hotel ini hanya digunakan untuk melakukan reservasi kamar saja, tidak mencakup fitur pembayaran.
