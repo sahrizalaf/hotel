@@ -1,4 +1,4 @@
-# Aplikasi Pemesanan Hotel - Ujikom SMK RPL Paket 2
+# Aplikasi Pemesanan Hotel - Ujikom SMK RPL 2021/2022 Paket 2
 
 Demo: **COMING SOON**
 
@@ -11,20 +11,21 @@ Aplikasi Pemesanan Hotel ini hanya digunakan untuk melakukan reservasi kamar saj
 * Database MySQL
 
 ## Fitur Umum:
-* Sistem Autentikasi & Otorisasi, meliputi:
-  * Register & Login, Pengamanan password menggunakan hashing dari function bawaan php native
+* Sistem Autentikasi & Otorisasi Pengguna, meliputi:
+  * Register & Login, Pengamanan password menggunakan hashing dari bawaan php native
   * Sistem Autentikasi, pembatasan hak akses menggunakan session
+* Basic CRUD menggunakan mysqli prosedural
 
 Terdapat 3 user:
-* Tamu (Tidak menggunakan akun)
+* Tamu (Tidak menggunakan akun), dapat melakukan:
   * Lihat Tipe Kamar & Fasilitas Hotel
   * Buat Reservasi & Print Out Bukti Reservasi
   * Cari Data Reservasi
 
-* Administrator
+* Administrator, dapat melakukan:
   * CRUD Kamar
   * CRUD Fasilitas Hotel
 
-* Resepsionis
+* Resepsionis, dapat melakukan:
   * Cek Data Reservasi
   * Cari Data Reservasi berdasarkan Tanggal Cek In atau Nama Tamu
